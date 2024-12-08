@@ -1,0 +1,41 @@
+.list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.listItem {
+    max-width: 130px;
+    height: 200px;
+    border: 3px black solid;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-right: 3px rgb(82, 82, 82) solid;
+}
+
+.cardImage {
+    margin: 0 auto;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+li:last-child {
+    border-right: 3px solid;
+}
