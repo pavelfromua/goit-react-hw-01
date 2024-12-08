@@ -1,4 +1,5 @@
 import css from './FriendList.module.css';
+import FriendListItem from "../FriendListItem/FriendListItem.jsx";
 
 function FriendList({ friends }) {
     return (
@@ -9,18 +10,6 @@ function FriendList({ friends }) {
                 </li>
             ))}
         </ul>
-    );
-}
-
-function FriendListItem({ avatar, name, isOnline }) {
-    return (
-        <div>
-            <img className={css.cardImage} src={avatar} alt="Avatar" width="48" />
-            <h2>{name}</h2>
-            <p className={isOnline ? css.green : css.red}>
-                {isOnline ? 'Online' : 'Offline'}
-            </p>
-        </div>
     );
 }
 
